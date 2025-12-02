@@ -33,7 +33,7 @@ Visualization and Analysis
 ### Name: BHARANI KUMAR J
 
 ### Register Number: 212224240024
-
+```
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -85,13 +85,13 @@ model = DenoisingAutoencoder().to(device)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
-print("Name: BHARANI KUMAR J")
+print("Name:BHARANI KUMAR J")
 print("Register Number: 212224240024")
 summary(model, input_size=(1, 28, 28))
 
 def train(model, loader, criterion, optimizer, epochs=5):
     model.train()
-    print("Name: Bharani Kumar J")
+    print("Name:BHARANI KUMAR J")
     print("Register Number: 212224240024")
     for epoch in range(epochs):
         running_loss = 0.0
@@ -120,7 +120,7 @@ def visualize_denoising(model, loader, num_images=10):
     noisy_images = noisy_images.cpu().numpy()
     outputs = outputs.cpu().numpy()
 
-    print("Name: BHARANI KUMAR J")
+    print("Name:BHARANI KUMAR J")
     print("Register Number: 212224240024")
     plt.figure(figsize=(18, 6))
 
@@ -147,6 +147,7 @@ def visualize_denoising(model, loader, num_images=10):
 
 train(model, train_loader, criterion, optimizer, epochs=5)
 visualize_denoising(model, test_loader)
+```
 
 ### OUTPUT
 
